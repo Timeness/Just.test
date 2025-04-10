@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airdrop FCFS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body class="bg-black text-white font-sans flex flex-col items-center p-6">
+  <h1 class="text-3xl mb-4 font-bold text-yellow-300">Airdrop System (5K FCFS)</h1>
+
+  <button id="connectBtn" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded mb-4">
+    Connect Wallet
+  </button>
+
+  <div id="wallet" class="mb-4"></div>
+
+  <div class="flex gap-4">
+    <button onclick="addPoints(5)" class="bg-blue-500 px-3 py-1 rounded">Follow Task</button>
+    <button onclick="claim()" class="bg-green-500 px-3 py-1 rounded">Claim</button>
+  </div>
+
+  <h2 class="text-xl mt-6">Top Users</h2>
+  <ul id="leaderboard" class="text-sm mt-2"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
